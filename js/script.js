@@ -34,3 +34,8 @@ function scrollFunction() {
     //Banner
     document.getElementById("banner").style.transform = "translateX(-" + ((document.documentElement.scrollTop / window.innerHeight) * (window.innerWidth * 0.42)) + "px)";
 }
+
+//Header Links
+function clickLink() {
+    document.getElementById("checkbox").checked = false;
+}

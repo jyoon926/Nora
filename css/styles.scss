@@ -21,6 +21,7 @@ html {
     overflow: hidden;
     background: $white;
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 body {
     overflow-x: hidden;
@@ -183,6 +184,10 @@ body {
             transform: rotate(-45deg);
         }
     }
+}
+.anchor {
+    position: relative;
+    top: -160px;
 }
 footer {
     width: 100%;
