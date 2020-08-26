@@ -115,7 +115,7 @@
           flex-direction: column;
 }
 
-.section1 .row {
+.about .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -124,12 +124,12 @@
           align-items: center;
 }
 
-.section1 .row img {
-  width: 30vw;
+.about .row img {
+  width: 25vw;
   margin-right: 5vw;
 }
 
-.section1 .row .column {
+.about .row .column {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -138,17 +138,17 @@
           align-items: flex-start;
 }
 
-.section1 .row .column p {
+.about .row .column p {
   font-size: 1em;
   line-height: 1.5;
   max-width: 600px;
 }
 
-.section2 {
+.gallery {
   padding: 0 6vw;
 }
 
-.section2 ul {
+.gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +157,7 @@
   grid-gap: 5vw;
 }
 
-.section2 ul li {
+.gallery ul li {
   all: unset;
   width: calc((100% - 10vw) / 3);
   line-height: 1;
@@ -176,25 +176,25 @@
           align-items: flex-start;
 }
 
-.section2 ul li img {
+.gallery ul li img {
   width: 100%;
   padding-bottom: 16px;
 }
 
-.section2 ul li p {
+.gallery ul li p {
   line-height: 1;
 }
 
-.section2 ul li .price {
+.gallery ul li .price {
   padding-bottom: 10px;
   font-size: 1em;
 }
 
-.section2 ul li .desc {
+.gallery ul li .desc {
   font-size: 1.5em;
 }
 
-.section3 {
+.instagram {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +211,7 @@
   margin: 12vw 0;
 }
 
-.section3 h1 {
+.instagram h1 {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,12 +228,17 @@
           justify-content: center;
 }
 
-.section3 h1 a {
+.instagram h1 img {
+  height: 5vw;
+  padding-right: 1.5vw;
+}
+
+.instagram h1 a {
   font-size: 20px;
   margin: 0 0 0 3vw;
 }
 
-.section3 #circle {
+.instagram #circle {
   position: absolute;
   height: 22vw;
   width: 22vw;

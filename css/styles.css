@@ -30,6 +30,16 @@ body {
   overflow-y: auto;
 }
 
+::-moz-selection {
+  background: #95827d;
+  color: #fff8f4;
+}
+
+::selection {
+  background: #95827d;
+  color: #fff8f4;
+}
+
 .sans {
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
@@ -264,7 +274,7 @@ footer {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 5px 8px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
