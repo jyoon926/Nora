@@ -14,7 +14,7 @@
 .hero h1 {
   font-size: 7em;
   text-align: center;
-  line-height: 1;
+  line-height: 1.15;
   width: 60%;
   z-index: 1;
 }
