@@ -1,23 +1,5 @@
 //Loader
-window.onload = function load() {
-}
-
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
+$(window).load(function() {
     document.getElementById('loadertext').style.transitionDuration = "1s";
     document.getElementById('loadertext').style.opacity = "0";
     document.getElementById('loader').style.transitionDelay = "1s";
