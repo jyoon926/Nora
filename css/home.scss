@@ -7,7 +7,7 @@ $accent: #56362c;
     justify-content: center;
     align-items: center;
     h1 {
-        font-size: 7em;
+        font-size: 7vw;
         text-align: center;
         line-height: 1.15;
         width: 60%;
@@ -30,6 +30,30 @@ $accent: #56362c;
             height: 30vh;
             top: 77vh;
             left: 20vw;
+        }
+    }
+    .rotate {
+        position: absolute;
+        animation: rotate 10s linear infinite;
+        height: 7vw;
+        width: 7vw;
+        z-index: 2;
+        top: 75vh;
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .rotatingcircle {
+        height: 100%;
+        width: 100%;
+        transition-duration: .4s;
+        &:hover {
+            transform: scale(1.2);
         }
     }
 }
@@ -102,6 +126,8 @@ $accent: #56362c;
         display: flex;
         flex-wrap: wrap;
         grid-gap: 5vw;
+        justify-content: flex-start;
+        align-items: flex-start;
         li {
             all: unset;
             width: calc((100% - 10vw) / 3);
@@ -110,9 +136,10 @@ $accent: #56362c;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+            //border-top: 2px solid $black;
             img {
                 width: 100%;
-                padding-bottom: 16px;
+                margin-bottom: 16px;
             }
             p {
                 line-height: 1;

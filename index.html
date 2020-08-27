@@ -30,6 +30,9 @@
         <img class="image" src="img/home/1.jpg">
         <img class="image" src="img/home/2.jpg">
         <img class="image" src="img/home/3.jpg">
+        <a href="https://www.instagram.com/clothing_by_nora/" target="_blank" class="rotate">
+            <img src="img/Instagram.svg" alt="" class="rotatingcircle">
+        </a>
     </section>
     <div id="banner">
         <p>Homemade</p>
@@ -52,47 +55,47 @@
     <section class="section gallery">
         <h1>Gallery</h1>
         <ul>
-            <li>
+            <li id="li1">
                 <img id="1">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
             </li>
-            <li>
+            <li id="li2">
                 <img id="2">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
             </li>
-            <li>
+            <li id="li3">
                 <img id="3">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
             </li>
-            <li>
+            <li id="li4">
                 <img id="4">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
             </li>
-            <li>
+            <li id="li5">
                 <img id="5">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
             </li>
-            <li>
+            <li id="li6">
                 <img id="6">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
             </li>
-            <li>
+            <li id="li7">
                 <img id="7">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
             </li>
-            <li>
+            <li id="li8">
                 <img id="8">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
             </li>
-            <li>
+            <li id="li9">
                 <img id="9">
                 <p class="price sans">30$</p>
                 <p class="desc">Description</p>
@@ -100,6 +103,14 @@
             <script>
                 for (var i = 1; i <= 9; i++) {
                     document.getElementById(i).src = "img/home/" + 2 + ".jpg";
+                    if (window.innerWidth > 1100) {
+                        if (i % 3 == 1)
+                            document.getElementById("li" + i).style.width = "calc((100% - 10vw) * (3 / 10.5))";
+                        else if (i % 3 == 2)
+                            document.getElementById("li" + i).style.width = "calc((100% - 10vw) * (4 / 10.5))";
+                        else
+                            document.getElementById("li" + i).style.width = "calc((100% - 10vw) * (3.5 / 10.5))";
+                    }
                 }
             </script>
         </ul>
